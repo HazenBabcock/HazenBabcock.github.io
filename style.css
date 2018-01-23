@@ -1,0 +1,191 @@
+/* Not sure what this is for. */
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* 
+ * Column handling.
+ */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 800px) {
+    .col-1 {width: 20%;}
+    .col-2 {width: 40%;}
+    .col-3 {width: 60%;}
+    .col-4 {width: 80%;}
+    .col-5 {width: 100%;}
+
+    .col-6 {width: 320px;}
+    .col-7 {width: 60%;}
+}
+
+
+/* 
+ * General HTML 
+ */
+h2 {
+    height: 0px;
+    line-height: 0px;
+}
+
+html {
+    font-family: "Lucida Console", Monaco, monospace;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/*
+ * Header and footer. 
+ */
+.footer {
+    background-color: #dddddd;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    color: #000000;
+    font-size: 12px;
+    padding: 0px;
+    text-align: center;
+}
+
+.header {
+    background-color: #dddddd;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    color: #000000;
+    padding: 0px;
+    text-align: center;
+}
+
+
+/*
+ * Menu.
+ */
+.menu ul {
+    display: table;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.menu li {
+    display: table-cell;
+}
+
+.menu a {
+    background-color: #DDD;
+    border-radius: 2px;
+    color: #000;
+    display: block;
+    margin: 4px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #888;
+}
+
+.menu_selected li {
+    display: inherit;
+}
+
+.menu_selected a {
+    background-color: #AAA;
+    border-radius: 2px;
+    color: #000;
+    display: inherit;
+    margin: 4px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*
+ * References.
+ */
+
+.reference {
+    border-bottom : solid 1px #ffffff;
+}
+
+.reference a {
+    text-decoration: none;
+    color: #000000;	
+}
+
+.reference a:hover {
+    border-bottom : solid 1px #aaaaaa;
+    text-decoration: none;
+}
+
+.ref_image {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ref_image img {
+    border-radius: 6px;
+    display: inline;
+    margin: 5px;
+    border: 1px solid #000000;
+    float: left;
+}
+
+
+/*
+ * Text.
+ */
+.bold_text {
+    font-weight : bold;
+}
+
+.centered_text {
+    text-align: center;
+}
+
+.inline_text {
+    float : left;
+    margin-right : 5px;
+}
+
+.italic_text {
+    font-style : italic;
+}
+
+.large_text {
+    font-size: large;
+}
+
+.name_text {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.x_large_text {
+    font-size : x-large;
+}
+
+.xx_large_text {
+    font-size : xx-large;
+}
+
