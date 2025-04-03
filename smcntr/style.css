@@ -1,0 +1,201 @@
+/* Not sure what this is for. */
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* 
+ * Column handling.
+ */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 800px) {
+    .col-1 {width: 20%;}
+    .col-2 {width: 40%;}
+    .col-3 {width: 60%;}
+    .col-4 {width: 80%;}
+    .col-5 {width: 100%;}
+
+    .col-6 {width: 320px;}
+    .col-7 {width: 60%;}
+}
+
+
+/* 
+ * General HTML 
+ */
+h2 {
+    height: 0px;
+    line-height: 0px;
+}
+
+html {
+    font-family: "Lucida Console", Monaco, monospace;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/*
+ * Header and footer. 
+ */
+.footer {
+    background-color: #ffcccc;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 12px;
+    padding: 0px;
+    text-align: center;
+}
+
+.header {
+    background-color: #ccccff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    padding: 0px;
+    text-align: center;
+}
+
+
+/*
+ * Menu.
+ */
+.menu ul {
+    display: table;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.menu li {
+    display: table-cell;
+}
+
+.menu a {
+    background-color: #ccffcc;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    display: block;
+    margin: 4px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #bbeebb;
+}
+
+.menu_selected li {
+    display: inherit;
+}
+
+.menu_selected a {
+    background-color: #aaddaa;
+    border-radius: 2px;
+    color: #000000;
+    display: inherit;
+    margin: 4px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*
+ * Personnel.
+ */
+.personnel img {
+    border-radius: 6px;
+    display: inline;
+    margin: 5px;
+    border: 1px solid #000000;
+    float: right;
+}
+
+
+/*
+ * Sections.
+ */
+.section {
+    margin: 10px;
+    padding: 2px;
+}
+
+.section h3 {
+    margin: 10px;
+}
+
+.section p {
+    margin: 10px;
+}
+
+.section1 {
+    background-color: #ffffcc;
+    border-radius: 0px;
+    color: #000000;
+}
+
+.section2 img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*
+ * Text.
+ */
+.bold_text {
+    font-weight : bold;
+}
+
+.centered_text {
+    text-align: center;
+}
+
+.inline_text {
+    float : left;
+    margin-right : 5px;
+}
+
+.italic_text {
+    font-style : italic;
+}
+
+.large_text {
+    font-size: large;
+}
+
+.name_text {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.x_large_text {
+    font-size : x-large;
+}
+
+.xx_large_text {
+    font-size : xx-large;
+}
+
