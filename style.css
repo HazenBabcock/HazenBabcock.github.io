@@ -1,0 +1,96 @@
+/* Not sure what this is for. */
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* 
+ * Column handling.
+ */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 800px) {
+    .col-1 {width: 20%;}
+    .col-2 {width: 40%;}
+    .col-3 {width: 60%;}
+    .col-4 {width: 80%;}
+    .col-5 {width: 100%;}
+
+    .col-6 {width: 320px;}
+    .col-7 {width: 60%;}
+}
+
+
+/* 
+ * General HTML 
+ */
+/*
+h2 {
+    height: 0px;
+    line-height: 0px;
+}
+*/
+
+html {
+    font-family: "Lucida Console", Monaco, monospace;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/*
+ * Header and footer. 
+ */
+.footer {
+    background-color: #eeeeee;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 12px;
+    padding: 0px;
+    text-align: center;
+}
+
+.header {
+    background-color: #eeeeee;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 12px;
+    padding: 0px;
+    text-align: center;
+}
+
+/*
+ * Text
+ */
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+ * Setup image.
+ */
+.simage {
+    border-radius: 6px;
+    border: 1px solid #000000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
